@@ -9,7 +9,6 @@ import {
   FaArrowUp,
   FaMapMarkerAlt,
   FaDownload,
-  FaHeart,
   FaWhatsapp,
 } from "react-icons/fa";
 
@@ -46,8 +45,8 @@ const socialLinks = [
 const quickLinks = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
 ];
 
 const Footer: React.FC = () => {
@@ -201,8 +200,7 @@ const Footer: React.FC = () => {
                 viewport={{ once: true }}
                 className="text-neutral-400 text-center md:text-left"
               >
-                © {new Date().getFullYear()} Tushar Shah — Crafted with{" "}
-                <FaHeart className="inline text-red-500 mx-1" /> in India.
+                © {new Date().getFullYear()} Tushar Shah Portfolio.
               </motion.p>
 
               <motion.button

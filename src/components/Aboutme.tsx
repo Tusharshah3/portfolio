@@ -67,8 +67,8 @@ const Aboutme: React.FC = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-neutral-400">
               I'm{" "}
               <span className="font-semibold text-neutral-100">Tushar Shah</span>, a{" "}
-              <span className="text-neutral-100 font-medium">Full Stack Developer</span>{" "}
-              who loves building modern, user-centric web applications.
+              <span className="text-neutral-100 font-medium">Aspiring Software Developer</span>{" "}
+              who loves building modern, user-centric applications.
               <br />
               <br />
               I focus on creating{" "}
@@ -76,19 +76,19 @@ const Aboutme: React.FC = () => {
                 scalable, intuitive, and high-performing
               </span>{" "}
               digital products using technologies like{" "}
-              <span className="text-neutral-100">Next.js, React, Node.js, and Convex</span>.
+              <span className="text-neutral-100">Next.js, React, Node.js, and PostGres</span>.
               <br />
               <br />
               My journey has been about constant learning — from building
               real-time apps like{" "}
-              <span className="text-neutral-100 font-medium">Excalidraw Clone</span> to
+              <span className="text-neutral-100 font-medium">Excalidraw -The collaborative app, Instamart-clone and My-Brain</span> to
               exploring{" "}
               <span className="text-neutral-100 font-medium">
                 AI-powered systems
               </span>{" "}
               such as my{" "}
               <span className="text-neutral-100 font-medium">
-                College Chatbot with LangChain, FAISS & Gemini
+                Visysynth, Tarang, College Chatbot with LangChain, FAISS & Gemini Embedding
               </span>
               .
               <br />

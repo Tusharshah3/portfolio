@@ -2,13 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { FaCirclePlus } from "react-icons/fa6";
-import med from "../images/medium.png";
 
-import exc from "../images/excc.png";
-import mudra from "../images/mudrax.png";
-import chessImg from "../images/chess.png";
-import tttImg from "../images/xo.png";
-
+import excalidrawImg from "../images/execalidraw.png";
+import myBrainImg from "../images/MyBrain.png";
+import instamart from "../images/instamart.png";
+import exeImg from "../images/exe_clone.png";
+import visuImg from "../images/visuSynth.png";
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -38,90 +37,82 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      id: 1,
-      title: "Realtime Chess",
-      description:
-        "A real-time multiplayer Chess game with live WebSocket-based gameplay, context state management, and interactive UI built with React and Tailwind.",
-      longDescription:
-        "A real-time multiplayer Chess game with live WebSocket-based gameplay, context state management, and interactive UI. Features include move validation, game state persistence, and an intuitive interface for seamless gameplay experience.",
-      img: chessImg,
-      github: "https://github.com/nikhilachale/Chess",
-      live: null,
-      tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"],
-      category: "Real-time Gaming",
-      featured: true,
-    },
+    id: 1,
+    title: "InstaMart",
+    description: "A Swiggy-like full-stack food ordering platform with real checkout, payments, and order tracking built using Go, GraphQL, Redis, and Next.js.",
+    longDescription:
+      "InstaMart is a production-grade Swiggy-style food delivery system engineered with Go, GraphQL, PostgreSQL, Redis, and Next.js. It features transaction-safe order creation, Redis-backed cart management with TTL, secure JWT authentication, and a smooth checkout-to-payment-to-receipt flow. The frontend is built using Next.js, TailwindCSS, and Apollo Client for a responsive, modern user experience, while the backend leverages Go with gqlgen  for reliability and scalability. The project include deployment on Render (backend) and Vercel (frontend), ensuring end-to-end integration between client and server.",
+    img: instamart, // replace with your imported image variable
+    github: "https://github.com/Tusharshah3/my-instamart-frontend",
+    live: "https://my-instamart-frontend.vercel.app/",
+    tags: ["Next.js", "Go", "React", "GraphQL", "Redis", "PostgreSQL", "TailwindCSS", "Vercel"],
+    category: "Full Stack",
+    featured: true,
+  },
+  {
+  id: 2,
+  title: "Excalidraw Advanced Clone",
+  description:
+    "A collaborative whiteboard app with real-time drawing, organizational workspace limits, enhanced selection tools, and PNG export support.",
+  longDescription:
+    "An advanced Excalidraw-inspired whiteboard application with real-time collaboration built using Liveblocks and Convex. Features include multi-user editing, selection improvements, camera reset controls, color picker with debouncing for smooth undo/redo, board creation limits per organization, and PNG export for easy asset sharing. Built with Next.js and shadcn/ui for a polished and scalable experience.",
+  img: exeImg, // import your image as exeImg at the top of the file
+  github: "https://github.com/Tusharshah3/exe-clone",
+  live: "https://exe-clone-zyi3.vercel.app/",
+  tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks", "Real-time"],
+  category: "Real-time Collaboration",
+  featured: true,
+},
+{
+  id: 3, 
+  title: "Second Brain",
+  description: "AI-powered personal knowledge hub to save, tag, search, and share your learning content intelligently.",
+  longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials — articles, videos, audios, and images — all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
+  img: myBrainImg, // replace with your imported image variable
+  github: "https://github.com/Tusharshah3/my-brain-frontend", 
+  live: "https://my-brain-frontend-k2nt.vercel.app/",
+  tags: ["React", "TypeScript", "Recoil", "MongoDB", "Qdrant", "Cohere", "TailwindCSS", "Express", "JWT"],
+  category: "Full Stack / AI Integration",
+  featured: true,
+},
+{
+  id: 4,
+  title: "VisuSynth – AI OCR & Document Digitization",
+  description:
+    "AI-powered OCR platform that extracts, corrects, and digitizes text from scanned documents with multilingual support, preprocessing, and real-time processing.",
+  longDescription:
+    "VisuSynth is an advanced AI-powered OCR platform that converts scanned documents and images into accurate, searchable, and editable digital text. Features include multilingual OCR with handwriting support, AI-powered text correction using Google Gemini, intelligent summarization, image preprocessing for higher accuracy, export as TXT/Markdown/searchable PDFs, real-time progress tracking, and secure document management. Built using React, Supabase, and Tesseract.js with shadcn/ui for a modern UI design.",
+  img: visuImg, // import at top of your file: import visuImg from "@/assets/visusynth.png"
+  github: "https://github.com/Tusharshah3/visusynth",
+  live: "https://visusynth.lovable.app/",
+  tags: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Tesseract.js",
+    "Supabase",
+    "Google Gemini",
+    "AI",
+    "OCR"
+  ],
+  category: "AI & Document Processing",
+  featured: true,
+},
+
     {
-      id: 2,
-      title: "XOXO Clash",
-      description:
-        "A real-time multiplayer Tic Tac Toe game built with React and WebSockets, supporting live moves and persistent game state.",
-      longDescription:
-        "A real-time multiplayer Tic Tac Toe game built with React and WebSockets. Players can compete in live matches with instant move synchronization and persistent game state tracking for an engaging gaming experience.",
-      img: tttImg,
-      github: "https://github.com/nikhilachale/XOXO-Clash",
-      live: "https://xoxo-clash-mu.vercel.app/",
-      tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"],
-      category: "Real-time Gaming",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "MudraX",
-      description:
-        "A Solana-based Web3 DApp to generate HD wallets, request SOL airdrops, sign messages, and transfer tokens with both mnemonic and wallet adapter support.",
-      longDescription:
-        "A comprehensive Solana-based Web3 DApp that enables users to generate HD wallets, request SOL airdrops, sign messages, and transfer tokens. Built with both mnemonic and wallet adapter support for enhanced security and flexibility.",
-      img: mudra,
-      github: "https://github.com/nikhilachale/MudraX",
-      live: "https://mudrax.vercel.app/",
-      tags: [
-        "React",
-        "Tailwind",
-        "TypeScript",
-        "Solana",
-        "Web3",
-        "Wallet Adapter",
-        "bip39",
-      ],
-      category: "Web3 Application",
-      featured: true,
-    },
-    {
-      id: 4,
-      title: "Medium Clone",
-      description:
-        "A Medium-like blogging platform with authentication and CRUD features.",
-      longDescription:
-        "A feature-rich blogging platform inspired by Medium, complete with user authentication, article creation, editing, and deletion capabilities. Built with modern web technologies for optimal performance.",
-      img: med,
-      github: "https://github.com/nikhilachale/Medium",
-      live: "https://cohort-omega.vercel.app/",
-      tags: [
-        "React",
-        "Tailwind",
-        "TypeScript",
-        "Cloudflare",
-        "PostgreSQL",
-        "Prisma",
-      ],
-      category: "Full Stack",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Excalidraw Clone",
-      description:
-        "A collaborative whiteboard tool mimicking Excalidraw, built for real-time visual ideation and sketching.",
-      longDescription:
-        "A collaborative whiteboard tool inspired by Excalidraw, designed for real-time visual ideation and sketching. Perfect for brainstorming sessions and creative collaboration with an intuitive drawing interface.",
-      img: exc,
-      github: "https://github.com/nikhilachale/Excalidraw",
-      live: null,
-      tags: ["React", "Tailwind", "TypeScript", "Canvas", "Realtime"],
-      category: "Creative Tools",
-      featured: false,
-    },
+  id: 5,
+  title: "Real-Time Collaborative Whiteboard",
+  description: "A live, Excalidraw-like whiteboard where multiple users can draw, resize, and erase shapes together in real time.",
+  longDescription:
+    "A full-stack real-time whiteboard application built using Next.js, TypeScript, and WebSockets. It allows multiple users to draw simultaneously on a shared canvas with tools like pencil, shapes, eraser, text, and resize. Every action syncs instantly via WebSockets and is persisted in a PostgreSQL database using Prisma. Features include smooth panning, zooming, selection, and a lag-free optimistic UI powered by a tempId-to-DB-ID mapping system.",
+  img: excalidrawImg, // your imported image variable
+  github: "https://github.com/Tusharshah3/exclidraw",
+  live: "https://github.com/Tusharshah3/exclidraw", 
+  tags: ["Next.js", "TypeScript", "WebSocket", "Prisma", "Canvas API", "PostgreSQL"],
+  category: "Full Stack / Real-time Collaboration",
+  featured: true,
+},
+
   ];
 
   const sectionRef = useRef<HTMLElement | null>(null);

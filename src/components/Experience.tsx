@@ -95,8 +95,9 @@ const Experience: React.FC = () => {
                   className="w-full md:w-56 h-56 bg-cover bg-center rounded-xl overflow-hidden shadow-lg border-2 border-neutral-800"
                   style={{ backgroundImage: `url(${exp.image})` }}
                 >
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none"></div>
                 </div>
+
 
                 <div className="flex-1 flex flex-col justify-center">
                   <h3 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent mb-2">

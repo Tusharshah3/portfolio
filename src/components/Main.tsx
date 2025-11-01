@@ -33,47 +33,13 @@ const Main: React.FC = () => {
       className="h-screen bg-black flex flex-col items-center justify-center text-white text-center bg-cover bg-center relative overflow-hidden"
     >
       {/* Background linear */}
-      <div className="absolute inset-0 bg-linear-to-br from-neutral-900 via-black to-neutral-900 opacity-80"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-neutral-900 via-black to-neutral-900 opacity-90"></div>
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neutral-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neutral-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gray-400/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neutral-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      {/* Social Icons */}
-      <div className="fixed z-30 p-2 top-20 right-4 sm:top-24 sm:right-6 lg:top-28 lg:right-10">
-        <div className="flex flex-col mt-2 items-center space-y-4 bg-neutral-900/40 backdrop-blur-md p-4 rounded-2xl border border-neutral-700/30 shadow-2xl">
-          <a
-            href="https://github.com/Tusharshah3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-300 hover:text-white hover:scale-110 transition-all duration-300 hover:rotate-6"
-          >
-            <i className="fab fa-github text-3xl lg:text-4xl"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tushar-shah-b674921b1/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-400 hover:scale-110 transition-all duration-300 hover:rotate-6"
-          >
-            <i className="fab fa-linkedin text-3xl lg:text-4xl"></i>
-          </a>
-          <a
-            href="mailto:tusharshah372003@gmail.com"
-            className="text-red-500 hover:text-red-400 hover:scale-110 transition-all duration-300 hover:rotate-6"
-          >
-            <i className="fas fa-envelope text-3xl lg:text-4xl"></i>
-          </a>
-          <a
-            href="https://wa.me/917477212156"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-500 hover:text-green-400 hover:scale-110 transition-all duration-300 hover:rotate-6"
-          >
-            <i className="fab fa-whatsapp text-3xl lg:text-4xl"></i>
-          </a>
-        </div>
-      </div>
+      
 
       {/* Main Text */}
       <div ref={nameRef} className="container relative z-10 px-4 sm:px-6">
@@ -86,7 +52,7 @@ const Main: React.FC = () => {
         </h1>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-linear-to-r from-neutral-500 via-neutral-300 to-neutral-500 bg-clip-text text-transparent leading-tight">
-          Software Engineer
+          Aspiring Software Engineer
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl mt-6 text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
