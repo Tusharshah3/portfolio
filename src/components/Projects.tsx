@@ -36,8 +36,21 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
+        {
+  id: 1,
+  title: "Real-Time Collaborative Whiteboard",
+  description: "A live, Excalidraw-like whiteboard where multiple users can draw, resize, and erase shapes together in real time.",
+  longDescription:
+    "A full-stack real-time whiteboard application built using Next.js, TypeScript, and WebSockets. It allows multiple users to draw simultaneously on a shared canvas with tools like pencil, shapes, eraser, text, and resize. Every action syncs instantly via WebSockets and is persisted in a PostgreSQL database using Prisma. Features include smooth panning, zooming, selection, and a lag-free optimistic UI powered by a tempId-to-DB-ID mapping system.",
+  img: excalidrawImg, // your imported image variable
+  github: "https://github.com/Tusharshah3/exclidraw",
+  live: "https://anydraw-frontend.onrender.com", 
+  tags: ["Next.js", "TypeScript", "WebSocket", "Prisma", "Canvas API", "PostgreSQL"],
+  category: "Full Stack / Real-time Collaboration",
+  featured: true,
+},
     {
-    id: 1,
+    id: 2,
     title: "InstaMart",
     description: "A Swiggy-like full-stack food ordering platform with real checkout, payments, and order tracking built using Go, GraphQL, Redis, and Next.js.",
     longDescription:
@@ -49,20 +62,7 @@ const Projects: React.FC = () => {
     category: "Full Stack",
     featured: true,
   },
-  {
-  id: 2,
-  title: "Excalidraw Advanced Clone",
-  description:
-    "A collaborative whiteboard app with real-time drawing, organizational workspace limits, enhanced selection tools, and PNG export support.",
-  longDescription:
-    "An advanced Excalidraw-inspired whiteboard application with real-time collaboration built using Liveblocks and Convex. Features include multi-user editing, selection improvements, camera reset controls, color picker with debouncing for smooth undo/redo, board creation limits per organization, and PNG export for easy asset sharing. Built with Next.js and shadcn/ui for a polished and scalable experience.",
-  img: exeImg, // import your image as exeImg at the top of the file
-  github: "https://github.com/Tusharshah3/exe-clone",
-  live: "https://exe-clone-zyi3.vercel.app/",
-  tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks", "Real-time"],
-  category: "Real-time Collaboration",
-  featured: true,
-},
+  
 {
   id: 3, 
   title: "Second Brain",
@@ -98,20 +98,21 @@ const Projects: React.FC = () => {
   category: "AI & Document Processing",
   featured: true,
 },
-
-    {
+{
   id: 5,
-  title: "Real-Time Collaborative Whiteboard",
-  description: "A live, Excalidraw-like whiteboard where multiple users can draw, resize, and erase shapes together in real time.",
+  title: "Excalidraw Advanced Clone",
+  description:
+    "A collaborative whiteboard app with real-time drawing, organizational workspace limits, enhanced selection tools, and PNG export support.",
   longDescription:
-    "A full-stack real-time whiteboard application built using Next.js, TypeScript, and WebSockets. It allows multiple users to draw simultaneously on a shared canvas with tools like pencil, shapes, eraser, text, and resize. Every action syncs instantly via WebSockets and is persisted in a PostgreSQL database using Prisma. Features include smooth panning, zooming, selection, and a lag-free optimistic UI powered by a tempId-to-DB-ID mapping system.",
-  img: excalidrawImg, // your imported image variable
-  github: "https://github.com/Tusharshah3/exclidraw",
-  live: "https://github.com/Tusharshah3/exclidraw", 
-  tags: ["Next.js", "TypeScript", "WebSocket", "Prisma", "Canvas API", "PostgreSQL"],
-  category: "Full Stack / Real-time Collaboration",
+    "An advanced Excalidraw-inspired whiteboard application with real-time collaboration built using Liveblocks and Convex. Features include multi-user editing, selection improvements, camera reset controls, color picker with debouncing for smooth undo/redo, board creation limits per organization, and PNG export for easy asset sharing. Built with Next.js and shadcn/ui for a polished and scalable experience.",
+  img: exeImg, // import your image as exeImg at the top of the file
+  github: "https://github.com/Tusharshah3/exe-clone",
+  live: "https://exe-clone-zyi3.vercel.app/",
+  tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks", "Real-time"],
+  category: "Real-time Collaboration",
   featured: true,
-},
+}
+
 
   ];
 
