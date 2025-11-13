@@ -1,17 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 
-interface NavLink {
-  name: string;
-  href: string;
-}
+
 
 const Header: React.FC = () => {
   const portref = useRef<HTMLHeadingElement | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+  
   useGSAP(() => {
     if (!portref.current) return;
     gsap.from(portref.current, {
@@ -25,9 +22,6 @@ const Header: React.FC = () => {
 
 
 
-  const handleNavClick = (): void => {
-    setIsMenuOpen(false);
-  };
 
   return (
     <nav className="bg-black/90 shadow-lg border-b border-neutral-800/50 backdrop-blur-md sticky top-0 z-50">

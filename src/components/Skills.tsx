@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
 
       {/* TITLE */}
       <h1 className="text-center text-6xl md:text-8xl font-extrabold 
-                     bg-gradient-to-r from-neutral-300 via-white to-neutral-300 
+                     bg-linear-to-r from-neutral-300 via-white to-neutral-300 
                      bg-clip-text text-transparent uppercase tracking-wider">
         Skills
       </h1>

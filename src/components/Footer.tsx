@@ -33,20 +33,10 @@ const socialLinks = [
     href: "mailto:tusharshah372003@gmail.com",
     color: "hover:text-red-400",
   },
-  // {
-  //   name: "WhatsApp",
-  //   icon: <FaWhatsapp className="w-5 h-5" />,
-  //   href: "https://wa.me/917477212156",
-  //   color: "hover:text-green-400",
-  // },
+
 ];
 
-const quickLinks = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-];
+
 
 const Footer: React.FC = () => {
   useGSAP(() => {
@@ -85,8 +75,8 @@ const Footer: React.FC = () => {
             >
               {/* Header */}
               <div>
-                <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent mb-4">
-                  Let’s Connect
+                <h3 className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent mb-4">
+                  Let's Connect
                 </h3>
                 <p className="text-neutral-400 text-lg leading-relaxed">
                   Always open to opportunities, collaborations, or a tech conversation!
@@ -116,7 +106,7 @@ const Footer: React.FC = () => {
                 href="mailto:tusharshah372003@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-neutral-600 to-neutral-700 
+                className="inline-flex items-center gap-2 bg-linear-to-r from-neutral-600 to-neutral-700 
                           hover:from-neutral-500 hover:to-neutral-600 text-white px-6 py-3 
                           rounded-xl text-base font-semibold transition-all duration-300 shadow-lg"
               >
@@ -164,7 +154,7 @@ const Footer: React.FC = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05, y: -3 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-3 p-4 bg-gradient-to-br from-neutral-900 to-black 
+                    className="flex items-center gap-3 p-4 bg-linear-to-br from-neutral-900 to-black 
                               rounded-xl border border-neutral-800 hover:border-neutral-600 
                               transition-all duration-300 text-neutral-400"
                   >
