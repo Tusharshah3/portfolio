@@ -39,10 +39,10 @@ const Experience: React.FC = () => {
       title: "Web Development Intern – Owndry LLP",
       link: "#",
       image:
-        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
       duration: "Jun 2025",
       description:
-        "Developed secure REST APIs using Node.js and Express.js, optimized MongoDB queries, and implemented version control, unit testing, and code reviews for reliability and scalability.",
+        "Developed secure REST APIs using Node.js and Express.js, optimized MongoDB queries, and implemented version control, unit testing, and code reviews for reliability and scalability also reduce the page time by 25%.",
     },
     {
       title: "Personal Projects",

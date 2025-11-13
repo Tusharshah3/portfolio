@@ -23,13 +23,7 @@ const Header: React.FC = () => {
     });
   }, []);
 
-  const navLinks: NavLink[] = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
+
 
   const handleNavClick = (): void => {
     setIsMenuOpen(false);
@@ -48,88 +42,8 @@ const Header: React.FC = () => {
           >
             Portfolio
           </motion.h1>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            {navLinks.map((link) => (
-              <motion.a
-                key={link.name}
-                href={link.href}
-                whileHover={{ y: -2, scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-neutral-300 text-lg hover:text-white transition-colors duration-300 relative group"
-              >
-                {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-neutral-400 to-neutral-200 group-hover:w-full transition-all duration-300"></span>
-              </motion.a>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setIsMenuOpen((prev) => !prev)}
-            className="md:hidden text-white hover:text-neutral-300 focus:outline-none p-2"
-            aria-label="Toggle menu"
-          >
-            <motion.div
-              animate={isMenuOpen ? "open" : "closed"}
-              className="space-y-1.5"
-            >
-              <motion.span
-                variants={{
-                  closed: { rotate: 0, y: 0 },
-                  open: { rotate: 45, y: 8 },
-                }}
-                className="block w-7 h-0.5 bg-white"
-              />
-              <motion.span
-                variants={{
-                  closed: { opacity: 1 },
-                  open: { opacity: 0 },
-                }}
-                className="block w-7 h-0.5 bg-white"
-              />
-              <motion.span
-                variants={{
-                  closed: { rotate: 0, y: 0 },
-                  open: { rotate: -45, y: -8 },
-                }}
-                className="block w-7 h-0.5 bg-white"
-              />
-            </motion.div>
-          </motion.button>
         </div>
       </div>
-      
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden bg-black/95 border-t border-neutral-800"
-          >
-            <div className="px-4 py-6 space-y-4">
-              {navLinks.map((link, index) => (
-                <motion.a
-                  key={link.name}
-                  href={link.href}
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  onClick={handleNavClick}
-                  className="block text-neutral-300 text-lg hover:text-white hover:translate-x-2 transition-all duration-300 py-2"
-                >
-                  → {link.name}
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </nav>
   );
 };
