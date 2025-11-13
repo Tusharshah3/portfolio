@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 
 const resumeDownloadLink =
-  "https://drive.google.com/file/d/1sh6S-4UWksgaM-Rfn8a44AN-u6gHdXNY/view?usp=sharing"; // update if you change drive link
+  "https://drive.google.com/file/d/1Qqj656ELYFDsMR44oYgvrZRhlPMOwwQs/view?usp=drive_link"; // update if you change drive link
 
 const socialLinks = [
   {
