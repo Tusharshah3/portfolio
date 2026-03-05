@@ -52,7 +52,7 @@ const Main: React.FC = () => {
         </h1>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-linear-to-r from-neutral-500 via-neutral-300 to-neutral-500 bg-clip-text text-transparent leading-tight">
-          Aspiring Software Engineer
+          Software Engineer
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl mt-6 text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">

@@ -88,9 +88,9 @@ const Aboutme: React.FC = () => {
               </span>{" "}
               such as my{" "}
               <span className="text-neutral-100 font-medium">
-                Visysynth, Tarang, College Chatbot with LangChain, FAISS & Gemini Embedding
+                Visysynth, Tarang, College Chatbot with LangChain, FAISS & Gemini Embedding.
               </span>
-              .
+              
               <br />
               <br />
               I believe in{" "}

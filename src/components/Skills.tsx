@@ -11,6 +11,7 @@ const skills = [
   "MongoDB",
   "Redis",
   "PostgreSQL",
+  "Go",
   "GraphQL",
   "Docker",
   "Git",

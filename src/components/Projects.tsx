@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
 },
     {
     id: 2,
-    title: "InstaMart",
+    title: "Food Ordering Platform",
     description: "A Swiggy-like full-stack food ordering platform with real checkout, payments, and order tracking built using Go, GraphQL, Redis, and Next.js.",
     longDescription:
       "InstaMart is a production-grade Swiggy-style food delivery system engineered with Go, GraphQL, PostgreSQL, Redis, and Next.js. It features transaction-safe order creation, Redis-backed cart management with TTL, secure JWT authentication, and a smooth checkout-to-payment-to-receipt flow. The frontend is built using Next.js, TailwindCSS, and Apollo Client for a responsive, modern user experience, while the backend leverages Go with gqlgen  for reliability and scalability. The project include deployment on Render (backend) and Vercel (frontend), ensuring end-to-end integration between client and server.",
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
   longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials — articles, videos, audios, and images — all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
   img: myBrainImg, // replace with your imported image variable
   github: "https://github.com/Tusharshah3/my-brain-frontend", 
-  live: "https://my-brain-frontend-k2nt.vercel.app/",
+  live: "https://github.com/Tusharshah3/my-brain-frontend",
   tags: ["React", "TypeScript", "Recoil", "MongoDB", "Qdrant", "Cohere", "TailwindCSS", "Express", "JWT"],
   category: "Full Stack / AI Integration",
   featured: true,
@@ -100,7 +100,7 @@ const Projects: React.FC = () => {
 },
 {
   id: 5,
-  title: "Excalidraw Advanced Clone",
+  title: "Excalidraw Advanced Clone using convex",
   description:
     "A collaborative whiteboard app with real-time drawing, organizational workspace limits, enhanced selection tools, and PNG export support.",
   longDescription:
@@ -108,7 +108,7 @@ const Projects: React.FC = () => {
   img: exeImg, // import your image as exeImg at the top of the file
   github: "https://github.com/Tusharshah3/exe-clone",
   live: "https://exe-clone-zyi3.vercel.app/",
-  tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks", "Real-time"],
+  tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks","Clerk", "Real-time"],
   category: "Real-time Collaboration",
   featured: true,
 }

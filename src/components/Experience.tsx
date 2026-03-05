@@ -11,7 +11,7 @@ interface ExperienceItem {
   github?: string;
   image: string;
   duration: string;
-  description: string;
+  description: Array<string> | string;
 }
 
 const Experience: React.FC = () => {
@@ -36,22 +36,28 @@ const Experience: React.FC = () => {
 
   const experiences: ExperienceItem[] = [
     {
-      title: "Web Development Intern – Owndry LLP",
-      link: "#",
+      title: "AI Engineer Intern – Spike AI",
+      link: "https://getspike.ai/",
       image:
         "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-      duration: "Jun 2025",
+      duration: "Jan 2026",
       description:
-        "Developed secure REST APIs using Node.js and Express.js, optimized MongoDB queries, and implemented version control, unit testing, and code reviews for reliability and scalability also reduce the page time by 25%.",
+        [
+          "-Designed and implemented end-to-end question ID tracking, ensuring consistent data flow across AI pipelines and services",
+          "- Built a design pipeline that enables developers to reuse and standardize UI components, improving development and code reusability speed and maintainability.",
+          "– Implemented a tier-based configuration system that improved scalability and enabled flexible feature control across  reduce api cost by 40% ",
+          "– Integrated and optimized REST APIs using Node.js for seamless AI service orchestration.",
+          "– Collaborated in an Agile environment, performing code reviews and implementing unit tests to ensure production reliability."
+        ]
     },
     {
-      title: "Personal Projects",
-      link: "https://github.com/Tusharshah3",
+      title: "Hackathone winner",
+      link: "https://www.linkedin.com/posts/tushar-shah-b674921b1_spikeai-aiengineer-internship-share-7429964269477343232-mxJC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFe7P8B_XNbkhz2eid2zyHIRVwlITiUJYA",
       image:
-        "https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-      duration: "2023 – Present",
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      duration: "Dec 2025",
       description:
-        "Built production-grade projects including a Swiggy Clone, Excalidraw Clone, and AI-powered College Chatbot using technologies like Next.js, Convex, Liveblocks, LangChain, Flask, and PostgreSQL.",
+        "Build a multiAgent system with orchatration strategy and secure 2nd prize(IPhone 17).",
     },
     {
       title: "Problem Solving & DSA",
