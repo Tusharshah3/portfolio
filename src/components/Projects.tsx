@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
   id: 3, 
   title: "Second Brain",
   description: "AI-powered personal knowledge hub to save, tag, search, and share your learning content intelligently.",
-  longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials - articles, videos, audios, and images - all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
+  longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials — articles, videos, audios, and images — all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
   img: myBrainImg, // replace with your imported image variable
   github: "https://github.com/Tusharshah3/my-brain-frontend", 
   live: "https://github.com/Tusharshah3/my-brain-frontend",

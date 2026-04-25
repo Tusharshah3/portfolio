@@ -66,32 +66,37 @@ const Aboutme: React.FC = () => {
           <div ref={textref} className="w-full md:w-2/3 text-center md:text-left">
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-neutral-400">
               I'm{" "}
-              <span className="font-semibold text-neutral-100">Tushar Shah</span>, an{" "}
-              <span className="text-neutral-100 font-medium">AI Engineer & Full-Stack Developer</span>{" "}
-              who loves building modern, intelligent, and scalable applications.
+              <span className="font-semibold text-neutral-100">Tushar Shah</span>, a{" "}
+              <span className="text-neutral-100 font-medium">Aspiring Software Developer</span>{" "}
+              who loves building modern, user-centric applications.
               <br />
               <br />
               I focus on creating{" "}
               <span className="text-neutral-100 font-medium">
-                high-performing digital products and robust AI pipelines
+                scalable, intuitive, and high-performing
               </span>{" "}
-              using technologies like{" "}
-              <span className="text-neutral-100">React, Next.js, Node.js, and GenAI Integrations</span>.
+              digital products using technologies like{" "}
+              <span className="text-neutral-100">Next.js, React, Node.js, and PostGres</span>.
               <br />
               <br />
-              My journey has been about constant learning and real-world impact - from engineering{" "}
-              <span className="text-neutral-100 font-medium">LLM architectures and vector search pipelines</span>{" "}
-              at Spike AI, to building real-time applications like{" "}
-              <span className="text-neutral-100 font-medium">Excalidraw, Instamart-clone, and My-Brain</span>.{" "}
-              I also love exploring AI-powered systems such as{" "}
+              My journey has been about constant learning — from building
+              real-time apps like{" "}
+              <span className="text-neutral-100 font-medium">Excalidraw -The collaborative app, Instamart-clone and My-Brain</span> to
+              exploring{" "}
               <span className="text-neutral-100 font-medium">
-                Visysynth, Tarang, and intelligent chatbots using LangChain & FAISS.
+                AI-powered systems
+              </span>{" "}
+              such as my{" "}
+              <span className="text-neutral-100 font-medium">
+                Visysynth, Tarang, College Chatbot with LangChain, FAISS & Gemini Embedding.
               </span>
+              
               <br />
               <br />
               I believe in{" "}
-              <span className="text-neutral-100">learning by building</span> -
-              combining advanced AI technologies, robust engineering, and human-centered design to turn ideas into impactful software.
+              <span className="text-neutral-100">learning by building</span> —
+              combining technology, creativity, and human-centered design to turn ideas into
+              impactful software.
             </p>
           </div>
 
