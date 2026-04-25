@@ -9,6 +9,8 @@ import {
   FaArrowUp,
   FaMapMarkerAlt,
   FaDownload,
+  FaPhone,
+  FaCode,
 } from "react-icons/fa";
 
 const resumeDownloadLink =
@@ -33,7 +35,12 @@ const socialLinks = [
     href: "mailto:tusharshah372003@gmail.com",
     color: "hover:text-red-400",
   },
-
+  {
+    name: "LeetCode",
+    icon: <FaCode className="w-5 h-5" />,
+    href: "https://leetcode.com/u/tusharshah37/",
+    color: "hover:text-yellow-400",
+  },
 ];
 
 
@@ -87,7 +94,17 @@ const Footer: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-start gap-3 text-neutral-400">
                   <FaMapMarkerAlt className="w-5 h-5 text-neutral-300 mt-1 shrink-0" />
-                  <span>Bhopal, India</span>
+                  <span>Indore, India</span>
+                </div>
+
+                <div className="flex items-start gap-3 text-neutral-400">
+                  <FaPhone className="w-5 h-5 text-neutral-300 mt-1 shrink-0" />
+                  <a
+                    href="tel:+917477212156"
+                    className="hover:text-neutral-200 transition-colors"
+                  >
+                    +91-7477212156
+                  </a>
                 </div>
 
                 <div className="flex items-start gap-3 text-neutral-400">
