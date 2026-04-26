@@ -7,7 +7,7 @@ const skillCategories = [
   },
   {
     category: "Frontend & UI",
-    items: ["React.js", "Next.js", "Responsive Web Design", "Tailwind", "WebSocket", "Canvas API"],
+    items: ["React.js", "Next.js", "Responsive Web Design", "Tailwind", "WebSocket", "Canvas API", "Streamlit"],
   },
   {
     category: "Backend & APIs",

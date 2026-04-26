@@ -66,7 +66,8 @@ const Experience: React.FC = () => {
         "Contributed to an Opportunity Creation Pipeline featuring LKB-first generation, LLM enrichment, and an adversarial Response Simulation Engine that stress-tests recommendations across Defensibility, Trust, and Authenticity dimensions before client exposure.",
         "Implemented async parallel execution via asyncio.gather across independent RAG pipeline branches and multi-tag CRO analyses, bounding end-to-end latency to the slowest branch rather than the sum.",
         "Centralized prompt management in Langfuse with hardcoded fallbacks in every Lambda, decoupling prompt iteration from deployment cycles and ensuring zero production downtime on Langfuse outages.",
-        "Propagated session IDs, question IDs, and chat thread IDs end-to-end across AWS Lambda + SQS pipelines, enabling forensic reconstruction of any production request via CloudWatch and Sentry."
+        "Propagated session IDs, question IDs, and chat thread IDs end-to-end across AWS Lambda + SQS pipelines, enabling forensic reconstruction of any production request via CloudWatch and Sentry.",
+        "Created CI/CD pipeline and Docker file to deploy Learnt knowledge system, and deployed it using AWS ECR image."
       ]
     },
     {
