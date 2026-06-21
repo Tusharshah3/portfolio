@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import hackathonPrize from "../images/hackathone-prize.png";
+import spikeAiImage from "../images/github.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +12,7 @@ interface ExperienceItem {
   link?: string;
   github?: string;
   image: string;
+  imageStyle?: React.CSSProperties;
   duration: string;
   description: string;
   detailedWork?: string[];
@@ -53,21 +55,22 @@ const Experience: React.FC = () => {
     {
       title: "AI Engineer Intern – Spike AI",
       link: "https://getspike.ai/",
-      image:
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: spikeAiImage,
+      imageStyle: {
+        backgroundSize: "auto 130%",
+        backgroundPosition: "15% 50%",
+      },
       duration: "Jan 2026 -- Present",
       description: "Working remotely as an AI Engineer Intern, focusing on LLM pipeline optimization, vector search schemas, and multi-agent systems.",
       detailedWork: [
         "Collaborated with senior engineers in a trunk-based Agile workflow, contributing to daily stand-ups, architecture reviews, and PR reviews across the full SDLC.",
         "Architected a tier-based CRO routing layer that filters 29 analytical signals down to 9 high-leverage signals for Starter customers, reducing LLM inference cost by 40% while preserving product value.",
-        "Designed and shipped an end-to-end Question ID Tracking System for the AEO pipeline, enabling deterministic correlation of up to 100 AI-generated questions across 4 answer engines (Perplexity, Google AI Overview, DataForSEO, SerpAPI) - reducing incident reconstruction time from multi-service log stitching to a single CloudWatch Logs Insights query.",
-        "Architected a dual-embedding Qdrant schema (text + design named vectors) and a dedicated design-intent classifier, enabling structural web-page queries (layout, UI patterns, CSS selectors) that were previously unsolvable by text-first retrieval pipelines.",
-        "Built a Design Analysis Pipeline using Gemini 2.5 Pro for long-context structural reasoning, returning Primary Match HTML, CSS selectors, and screenshot evidence - with a resilient fallback chain handling Langfuse outages and malformed LLM JSON.",
+        "Architected a dual-embedding Qdrant schema (text + design named vectors) and a dedicated design-intent classifier, enabling structural web-page queries (layout, UI patterns) that were previously unsolvable by text-first retrieval pipelines.",
+        "Built a Design Analysis Pipeline using RAG and Gemini 2.5 Pro for long-context structural reasoning, returning Primary Match HTML, CSS selectors, and screenshot evidence for the Domain Knowledge Base.",
         "Contributed to an Opportunity Creation Pipeline featuring LKB-first generation, LLM enrichment, and an adversarial Response Simulation Engine that stress-tests recommendations across Defensibility, Trust, and Authenticity dimensions before client exposure.",
-        "Implemented async parallel execution via asyncio.gather across independent RAG pipeline branches and multi-tag CRO analyses, bounding end-to-end latency to the slowest branch rather than the sum.",
-        "Centralized prompt management in Langfuse with hardcoded fallbacks in every Lambda, decoupling prompt iteration from deployment cycles and ensuring zero production downtime on Langfuse outages.",
-        "Propagated session IDs, question IDs, and chat thread IDs end-to-end across AWS Lambda + SQS pipelines, enabling forensic reconstruction of any production request via CloudWatch and Sentry.",
-        "Created CI/CD pipeline and Docker file to deploy Learnt knowledge system, and deployed it using AWS ECR image."
+        "Built an Image Playground delivering features for generating and editing images using Gemini 2.0 Flash image, GPT Image-1, and the Sharp library — exposed as a unified API across all pipelines.",
+        "Propagated session IDs, question IDs, and chat thread IDs end-to-end across AWS Lambda + SQS pipelines, enabling forensic reconstruction of any production request via CloudWatch, Sentry, and Langfuse.",
+        "Created CI/CD pipeline and Dockerfile to containerize and deploy the Learnt Knowledge Base system, pushing images to AWS ECR and shipping to production without manual intervention."
       ]
     },
     {
@@ -78,19 +81,10 @@ const Experience: React.FC = () => {
       description:
         "Built a multi-agent system with an orchestration strategy and secured 2nd prize (iPhone 17).",
     },
-    {
-      title: "Problem Solving & DSA",
-      link: "https://leetcode.com/u/tusharshah37/",
-      image:
-        "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-      duration: "Ongoing",
-      description:
-        "Solved 550+ LeetCode problems, strengthening data structures and algorithms foundations for performance-optimized code.",
-    },
   ];
 
   return (
-    <section className="min-h-screen flex flex-col bg-black px-4 py-20 relative overflow-hidden">
+    <section id="experience" className="min-h-screen flex flex-col bg-zinc-950 px-4 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-neutral-950/5 to-transparent"></div>
 
       <div className="text-center mb-20 relative z-10">
@@ -100,7 +94,7 @@ const Experience: React.FC = () => {
         >
           Experience
         </h2>
-        <div className="w-24 h-1 bg-linear-to-r from-neutral-500 to-neutral-100 mx-auto rounded-full"></div>
+        <div className="w-24 h-1 bg-linear-to-r from-indigo-500 to-indigo-300 mx-auto rounded-full"></div>
       </div>
 
       <div
@@ -118,7 +112,7 @@ const Experience: React.FC = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div
                   className="w-full md:w-56 h-56 shrink-0 bg-cover bg-center rounded-xl overflow-hidden shadow-lg border-2 border-neutral-800"
-                  style={{ backgroundImage: `url(${exp.image})` }}
+                  style={{ backgroundImage: `url(${exp.image})`, ...exp.imageStyle }}
                 >
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none"></div>
                 </div>
@@ -138,7 +132,7 @@ const Experience: React.FC = () => {
                     {exp.detailedWork && (
                       <button
                         onClick={() => setSelectedExp(exp)}
-                        className="inline-flex items-center gap-2 bg-linear-to-r from-neutral-200 to-neutral-400 hover:from-white hover:to-neutral-300 text-black px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg"
+                        className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-indigo-500/20"
                       >
                         View Work
                       </button>
@@ -191,7 +185,7 @@ const Experience: React.FC = () => {
                 <ul className="space-y-4">
                   {selectedExp.detailedWork.map((point, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-neutral-300">
-                      <span className="mt-2 block w-2 h-2 shrink-0 rounded-full bg-neutral-500"></span>
+                      <span className="mt-2 block w-2 h-2 shrink-0 rounded-full bg-indigo-500"></span>
                       <span className="leading-relaxed text-lg">{point}</span>
                     </li>
                   ))}

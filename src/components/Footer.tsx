@@ -9,7 +9,6 @@ import {
   FaArrowUp,
   FaMapMarkerAlt,
   FaDownload,
-  FaPhone,
   FaCode,
 } from "react-icons/fa";
 
@@ -61,7 +60,6 @@ const Footer: React.FC = () => {
 
   return (
     <footer
-      id="contact"
       className="relative mt-20 bg-linear-to-b from-transparent to-black/50"
     >
       <div className="absolute inset-0 bg-linear-to-t from-neutral-950/20 to-transparent"></div>
@@ -97,17 +95,7 @@ const Footer: React.FC = () => {
                   <span>Indore, India</span>
                 </div>
 
-                <div className="flex items-start gap-3 text-neutral-400">
-                  <FaPhone className="w-5 h-5 text-neutral-300 mt-1 shrink-0" />
-                  <a
-                    href="tel:+917477212156"
-                    className="hover:text-neutral-200 transition-colors"
-                  >
-                    +91-7477212156
-                  </a>
-                </div>
-
-                <div className="flex items-start gap-3 text-neutral-400">
+<div className="flex items-start gap-3 text-neutral-400">
                   <FaEnvelope className="w-5 h-5 text-neutral-300 mt-1 shrink-0" />
                   <a
                     href="mailto:tusharshah372003@gmail.com"
@@ -119,17 +107,17 @@ const Footer: React.FC = () => {
               </div>
 
               {/* Contact Button */}
-              <motion.a
-                href="mailto:tusharshah372003@gmail.com"
+              <motion.button
+                onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-linear-to-r from-neutral-600 to-neutral-700 
-                          hover:from-neutral-500 hover:to-neutral-600 text-white px-6 py-3 
+                className="inline-flex items-center gap-2 bg-linear-to-r from-neutral-600 to-neutral-700
+                          hover:from-neutral-500 hover:to-neutral-600 text-white px-6 py-3
                           rounded-xl text-base font-semibold transition-all duration-300 shadow-lg"
               >
                 <FaEnvelope className="w-5 h-5" />
                 Get In Touch
-              </motion.a>
+              </motion.button>
 
               {/* Resume */}
               <div className="pt-2">
