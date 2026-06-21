@@ -64,19 +64,7 @@ const Projects: React.FC = () => {
   },
   
 {
-  id: 3, 
-  title: "Second Brain",
-  description: "AI-powered personal knowledge hub to save, tag, search, and share your learning content intelligently.",
-  longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials - articles, videos, audios, and images - all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
-  img: myBrainImg, // replace with your imported image variable
-  github: "https://github.com/Tusharshah3/my-brain-frontend", 
-  live: "https://github.com/Tusharshah3/my-brain-frontend",
-  tags: ["React", "TypeScript", "Recoil", "MongoDB", "Qdrant", "Cohere", "TailwindCSS", "Express", "JWT"],
-  category: "Full Stack / AI Integration",
-  featured: true,
-},
-{
-  id: 4,
+  id: 3,
   title: "VisuSynth – AI OCR & Document Digitization",
   description:
     "AI-powered OCR platform that extracts, corrects, and digitizes text from scanned documents with multilingual support, preprocessing, and real-time processing.",
@@ -99,7 +87,7 @@ const Projects: React.FC = () => {
   featured: true,
 },
 {
-  id: 5,
+  id: 4,
   title: "Excalidraw Advanced Clone using convex",
   description:
     "A collaborative whiteboard app with real-time drawing, organizational workspace limits, enhanced selection tools, and PNG export support.",
@@ -111,8 +99,19 @@ const Projects: React.FC = () => {
   tags: ["Next.js", "JWT", "shadcn/ui", "Convex", "Liveblocks","Clerk", "Real-time"],
   category: "Real-time Collaboration",
   featured: true,
-}
-
+},
+{
+  id: 5, 
+  title: "Second Brain",
+  description: "AI-powered personal knowledge hub to save, tag, search, and share your learning content intelligently.",
+  longDescription: "Second Brain is a full-stack productivity tool that helps users centralize their learning materials - articles, videos, audios, and images - all in one clean, searchable dashboard. It integrates AI embeddings via Cohere and stores them in Qdrant for semantic (meaning-based) search. Users can easily tag their content, organize it visually, and generate a secure share link (SHA-256 hash) to publicly showcase their collection. The app features JWT authentication, optimistic UI updates, Recoil-based state management, and a responsive, minimal UI built with Tailwind CSS.",
+  img: myBrainImg, // replace with your imported image variable
+  github: "https://github.com/Tusharshah3/my-brain-frontend", 
+  live: "https://github.com/Tusharshah3/my-brain-frontend",
+  tags: ["React", "TypeScript", "Recoil", "MongoDB", "Qdrant", "Cohere", "TailwindCSS", "Express", "JWT"],
+  category: "Full Stack / AI Integration",
+  featured: true,
+},
 
   ];
 

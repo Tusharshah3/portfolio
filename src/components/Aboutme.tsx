@@ -44,7 +44,7 @@ const Aboutme: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-black text-neutral-200 min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section id="about" className="py-20 bg-zinc-950 text-neutral-200 min-h-screen flex flex-col justify-center relative overflow-hidden">
       {/* Softer background linear */}
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-neutral-900/30 to-transparent"></div>
 
@@ -57,7 +57,7 @@ const Aboutme: React.FC = () => {
           >
             About Me
           </h2>
-          <div className="w-24 h-1 bg-linear-to-r from-neutral-500 to-neutral-100 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-indigo-500 to-indigo-300 mx-auto rounded-full"></div>
         </div>
 
         {/* Content */}
@@ -68,31 +68,20 @@ const Aboutme: React.FC = () => {
               I'm{" "}
               <span className="font-semibold text-neutral-100">Tushar Shah</span>, an{" "}
               <span className="text-neutral-100 font-medium">AI Engineer & Full-Stack Developer</span>{" "}
-              who loves building modern, intelligent, and scalable applications.
+              building intelligent, scalable applications that solve real problems.
               <br />
               <br />
-              I focus on creating{" "}
-              <span className="text-neutral-100 font-medium">
-                high-performing digital products and robust AI pipelines
-              </span>{" "}
-              using technologies like{" "}
-              <span className="text-neutral-100">React, Next.js, Node.js, and GenAI Integrations</span>.
+              Currently at{" "}
+              <span className="text-neutral-100 font-medium">Spike AI</span>, I work on{" "}
+              <span className="text-neutral-100 font-medium">LLM pipelines, vector search architectures, and multi-agent systems</span>{" "}
+              — turning complex AI research into production-ready features. I thrive at the intersection of clean engineering and creative problem solving.
               <br />
               <br />
-              My journey has been about constant learning and real-world impact - from engineering{" "}
-              <span className="text-neutral-100 font-medium">LLM architectures and vector search pipelines</span>{" "}
-              at Spike AI, to building real-time applications like{" "}
-              <span className="text-neutral-100 font-medium">Excalidraw, Instamart-clone, and My-Brain</span>.{" "}
-              I also love exploring AI-powered systems such as{" "}
-              <span className="text-neutral-100 font-medium">
-                Visysynth, Tarang, and intelligent chatbots using LangChain & FAISS.
-              </span>
-              <br />
-              <br />
-              I believe in{" "}
-              <span className="text-neutral-100">learning by building</span> -
-              combining advanced AI technologies, robust engineering, and human-centered design to turn ideas into impactful software.
+              Outside of code, I'm a{" "}
+              <span className="text-neutral-100 font-medium">travel explorer</span>{" "}
+              — discovering new places keeps me curious and quietly fuels the creativity I bring back to every project.
             </p>
+
           </div>
 
           {/* Image */}
