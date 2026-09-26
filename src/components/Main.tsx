@@ -12,7 +12,7 @@ const Main: React.FC = () => {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1, ease: "back.out(1.7)" }
+      { opacity: 1, duration: 1, ease: "back.out(1.7)" },
     );
 
     gsap.from(nameRef.current.children, {
@@ -59,22 +59,31 @@ const Main: React.FC = () => {
         </h1>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-linear-to-r from-neutral-400 via-indigo-300 to-neutral-400 bg-clip-text text-transparent leading-tight">
-          Software Engineer
+          AI Systems & Infra Engineer
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl mt-6 text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-          Building scalable, reliable web solutions with modern tech.
+          Architecting AI systems and the production infrastructure that keeps
+          them reliable at scale.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-10">
           <button
-            onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .querySelector("#projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-indigo-500/25"
           >
             View Projects
           </button>
           <button
-            onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .querySelector("#contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="px-8 py-3 border border-neutral-600 text-neutral-300 hover:border-indigo-500 hover:text-indigo-300 font-semibold rounded-xl transition-all duration-300"
           >
             Get In Touch
@@ -84,7 +93,9 @@ const Main: React.FC = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-neutral-500 tracking-widest uppercase">Scroll</span>
+        <span className="text-xs text-neutral-500 tracking-widest uppercase">
+          Scroll
+        </span>
         <div className="w-px h-8 bg-linear-to-b from-neutral-500 to-transparent"></div>
       </div>
     </section>

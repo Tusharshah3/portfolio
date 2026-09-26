@@ -44,7 +44,10 @@ const Aboutme: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="py-20 bg-zinc-950 text-neutral-200 min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section
+      id="about"
+      className="py-20 bg-zinc-950 text-neutral-200 min-h-screen flex flex-col justify-center relative overflow-hidden"
+    >
       {/* Softer background linear */}
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-neutral-900/30 to-transparent"></div>
 
@@ -63,25 +66,43 @@ const Aboutme: React.FC = () => {
         {/* Content */}
         <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Text */}
-          <div ref={textref} className="w-full md:w-2/3 text-center md:text-left">
+          <div
+            ref={textref}
+            className="w-full md:w-2/3 text-center md:text-left"
+          >
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-neutral-400">
               I'm{" "}
-              <span className="font-semibold text-neutral-100">Tushar Shah</span>, an{" "}
-              <span className="text-neutral-100 font-medium">AI Engineer & Full-Stack Developer</span>{" "}
-              building intelligent, scalable applications that solve real problems.
+              <span className="font-semibold text-neutral-100">
+                Tushar Shah
+              </span>
+              , an{" "}
+              <span className="text-neutral-100 font-medium">
+                AI Systems & Infra Engineer
+              </span>{" "}
+              who designs around what a system actually needs, not just what
+              ships fastest.
               <br />
               <br />
               Currently at{" "}
-              <span className="text-neutral-100 font-medium">Spike AI</span>, I work on{" "}
-              <span className="text-neutral-100 font-medium">LLM pipelines, vector search architectures, and multi-agent systems</span>{" "}
-              — turning complex AI research into production-ready features. I thrive at the intersection of clean engineering and creative problem solving.
+              <span className="text-neutral-100 font-medium">Spike AI</span>, I
+              architect{" "}
+              <span className="text-neutral-100 font-medium">
+                LLM pipelines, vector search schemas, and the production
+                infrastructure (AWS Lambda, SQS, DynamoDB) that keeps them
+                reliable
+              </span>{" "}
+              — from root-causing a failure to designing the system that
+              prevents it. I thrive at the intersection of system design and
+              hands-on infra work.
               <br />
               <br />
               Outside of code, I'm a{" "}
-              <span className="text-neutral-100 font-medium">travel explorer</span>{" "}
-              — discovering new places keeps me curious and quietly fuels the creativity I bring back to every project.
+              <span className="text-neutral-100 font-medium">
+                travel explorer
+              </span>{" "}
+              — discovering new places keeps me curious and quietly fuels the
+              creativity I bring back to every project.
             </p>
-
           </div>
 
           {/* Image */}
